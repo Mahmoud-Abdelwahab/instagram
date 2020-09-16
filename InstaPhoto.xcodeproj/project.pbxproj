@@ -13,6 +13,10 @@
 		BB47757A251211E700AE185B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB477578251211E700AE185B /* Main.storyboard */; };
 		BB47757C251211EC00AE185B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB47757B251211EC00AE185B /* Assets.xcassets */; };
 		BB47757F251211EC00AE185B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB47757D251211EC00AE185B /* LaunchScreen.storyboard */; };
+		BB477588251229CF00AE185B /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB477587251229CF00AE185B /* UIViewExtention.swift */; };
+		BB47758C25123DD000AE185B /* UIViewControlerExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47758B25123DD000AE185B /* UIViewControlerExtentions.swift */; };
+		BB4775912512462F00AE185B /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4775902512462F00AE185B /* UIColorExtention.swift */; };
+		BB477593251298BF00AE185B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB477592251298BF00AE185B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BB47757B251211EC00AE185B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB47757E251211EC00AE185B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB477580251211EC00AE185B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB477587251229CF00AE185B /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		BB47758B25123DD000AE185B /* UIViewControlerExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControlerExtentions.swift; sourceTree = "<group>"; };
+		BB4775902512462F00AE185B /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		BB477592251298BF00AE185B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		BB477571251211E700AE185B /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				BB47758D2512451800AE185B /* Extentions */,
 				BB477572251211E700AE185B /* AppDelegate.swift */,
 				BB477574251211E700AE185B /* SceneDelegate.swift */,
 				BB477576251211E700AE185B /* ViewController.swift */,
 				BB477578251211E700AE185B /* Main.storyboard */,
 				BB47757B251211EC00AE185B /* Assets.xcassets */,
+				BB477592251298BF00AE185B /* GoogleService-Info.plist */,
 				BB47757D251211EC00AE185B /* LaunchScreen.storyboard */,
 				BB477580251211EC00AE185B /* Info.plist */,
 			);
 			path = InstaPhoto;
+			sourceTree = "<group>";
+		};
+		BB4775862512298300AE185B /* UIView+Extention */ = {
+			isa = PBXGroup;
+			children = (
+				BB477587251229CF00AE185B /* UIViewExtention.swift */,
+			);
+			path = "UIView+Extention";
+			sourceTree = "<group>";
+		};
+		BB47758925123D8B00AE185B /* UIColor+Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				BB4775902512462F00AE185B /* UIColorExtention.swift */,
+			);
+			path = "UIColor+Extentions";
+			sourceTree = "<group>";
+		};
+		BB47758A25123D9D00AE185B /* UIVIewController+Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				BB47758B25123DD000AE185B /* UIViewControlerExtentions.swift */,
+			);
+			path = "UIVIewController+Extentions";
+			sourceTree = "<group>";
+		};
+		BB47758D2512451800AE185B /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				BB47758925123D8B00AE185B /* UIColor+Extentions */,
+				BB4775862512298300AE185B /* UIView+Extention */,
+				BB47758A25123D9D00AE185B /* UIVIewController+Extentions */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +172,7 @@
 				BB47757F251211EC00AE185B /* LaunchScreen.storyboard in Resources */,
 				BB47757C251211EC00AE185B /* Assets.xcassets in Resources */,
 				BB47757A251211E700AE185B /* Main.storyboard in Resources */,
+				BB477593251298BF00AE185B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB47758C25123DD000AE185B /* UIViewControlerExtentions.swift in Sources */,
 				BB477577251211E700AE185B /* ViewController.swift in Sources */,
+				BB4775912512462F00AE185B /* UIColorExtention.swift in Sources */,
 				BB477573251211E700AE185B /* AppDelegate.swift in Sources */,
 				BB477575251211E700AE185B /* SceneDelegate.swift in Sources */,
+				BB477588251229CF00AE185B /* UIViewExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
